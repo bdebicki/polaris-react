@@ -1,3 +1,7 @@
+@import '../../styles/foundation.scss';
+@import '../../styles/global.scss';
+@import '../../styles/shared.scss';
+
 .VisuallyHidden {
   @include visually-hidden;
 }

@@ -63,7 +63,9 @@
     "readme-update-version": "node ./scripts/readme-update-version",
     "version": "yarn run readme-update-version",
     "storybook": "start-storybook -p 6006 --quiet",
-    "storybook:build": "yarn run copy-polaris-tokens && build-storybook -o build/storybook/static"
+    "storybook:build": "yarn run copy-polaris-tokens && build-storybook -o build/storybook/static",
+    "merge:em": "uxpin-merge --webpack-config ./webpack.uxpin.config.js --uxpin-domain uxpin.com",
+    "merge:dump": "uxpin-merge --dump --webpack-config ./webpack.uxpin.config.js --uxpin-domain uxpin.com"
   },
   "stylelint": {
     "extends": [
@@ -196,10 +198,11 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.6.1",
     "react-transition-group": "^2.4.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "ts-loader": "^5.4.3",
     "tslib": "^1.9.3",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-cli": "^3.3.1"
   }
 }
